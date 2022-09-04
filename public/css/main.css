@@ -1,0 +1,34 @@
+/* Personal CSS */
+
+
+
+/* Khi tồn tại cả 2 class toggle-list và show thì class items
+sẽ được css như bên dưới (điều kiện là items phải là con của 2 class kia)
+*/
+.toggle-list.show .items {
+    display: block;
+}
+/* Khi tồn tại cả 2 class toggle-list và hide thì class items
+sẽ được css như bên dưới (điều kiện là items phải là con của 2 class kia)
+*/
+.toggle-list.hide .items {
+    display: none;
+}
+
+.toggle-list.show .arrow-down {
+    display: inline-block;
+}
+
+.toggle-list.show .arrow-right {
+    display: none
+}
+
+
+
+.toggle-list.hide .arrow-down {
+    display: none;
+}
+
+.toggle-list.hide .arrow-right {
+    display: inline-block;
+}
