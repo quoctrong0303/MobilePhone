@@ -24,7 +24,7 @@
 
         <!-- Navbar-1 -->
         <div class="bg-primary-color h-8">
-            <div class="grids wide">
+            <div class="grids wide mobile:p-[0_12px]">
                 <div class="flex justify-between items-center h-8 text-[12px] font-semibold">
                     <div class="">
                         <a href="mailto:quoctrong0303@gmail.com" class="">
@@ -284,7 +284,7 @@
             <div class="grids wide">
                 <div class="row pt-1">
                     <!-- Category -->
-                    <div class="col l-2">
+                    <div class="mobile:hidden tablet:hidden col l-2">
                         <div class="select-none">
                             <h3 class="font-semibold bg-slate-100 p-2 border-solid border-[#e8e8e8] border-2"><i class="fas fa-list pr-2"></i> Danh mục</h3>
                             <ul class="bg-slate-100 p-2 border-solid border-[#e8e8e8] border-2">
@@ -304,29 +304,30 @@
                         </div>
                     </div>
                     <div class="col l-10">
-                        <div class="row">
-                            <div class="col l-12">
-                                <div class="flex justify-between p-3 bg-slate-100 mb-2">
-                                    <div>
-                                        <span class="mr-2 text-[#555555]">Sắp xếp theo</span>
-                                        <span class="hover:cursor-pointer mr-2 p-[4px_8px] bg-white">Mới nhất</span>
-                                        <span class="hover:cursor-pointer mr-2 p-[4px_8px] bg-white">Phổ biến</span>
-                                        <span class="hover:cursor-pointer mr-2 p-[4px_8px] bg-white">Bán chạy</span>
-                                        <select class="p-[4px_8px]" name="" id="">
-                                            <option value="">Giá</option>
-                                            <option value="">Thấp đến cao</option>
-                                            <option value="">Cao đến thấp</option>
-                                        </select>
-                                    </div>
-    
-                                    <div>
-                                        <span class="text-yellow-500">1</span>
-                                        <span>/14</span>
-                                        <i class="hover:cursor-pointer p-[8px_12px] bg-white arrow-right fas fa-chevron-left pr-2 text-yellow-500" aria-hidden="true"></i>
-                                        <i class="hover:cursor-pointer p-[8px_12px] bg-white arrow-right fas fa-chevron-right pr-2 text-yellow-500" aria-hidden="true"></i>
-                                    </div>
+                        <div class="mobile:hidden tablet:hidden">
+                            <div class="flex justify-between p-3 bg-slate-100 mb-2">
+                                <div>
+                                    <span class="mr-2 text-[#555555]">Sắp xếp theo</span>
+                                    <span class="hover:cursor-pointer mr-2 p-[4px_8px] bg-white">Mới nhất</span>
+                                    <span class="hover:cursor-pointer mr-2 p-[4px_8px] bg-white">Phổ biến</span>
+                                    <span class="hover:cursor-pointer mr-2 p-[4px_8px] bg-white">Bán chạy</span>
+                                    <select class="p-[4px_8px]" name="" id="">
+                                        <option value="">Giá</option>
+                                        <option value="">Thấp đến cao</option>
+                                        <option value="">Cao đến thấp</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <span class="text-yellow-500">1</span>
+                                    <span>/14</span>
+                                    <i class="hover:cursor-pointer p-[8px_12px] bg-white arrow-right fas fa-chevron-left pr-2 text-yellow-500" aria-hidden="true"></i>
+                                    <i class="hover:cursor-pointer p-[8px_12px] bg-white arrow-right fas fa-chevron-right pr-2 text-yellow-500" aria-hidden="true"></i>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row mobile:p-[0_8px]">
+                            
                             <div class="col l-2-4 md-4 c-6">
                                 <div class="transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
                                     <img class="object-cover block m-auto h-[228px] w-[168px]" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/343/934/products/iphone-8-red-do-1-400x460.png" alt="">
@@ -465,8 +466,8 @@
 
         <footer class="pt-4 mt-4 border-solid border-primary-color border-t-4"></footer>
             <div class="grids wide pb-4">
-                <div class="row">
-                    <div class="col l-3">
+                <div class="row tablet:p-[0_16px] mobile:p-[0_16px]">
+                    <div class="col l-3 md-6 c-6">
                         <p class="font-semibold text-[16px] pb-4 uppercase">Chăm sóc khách hàng</p>
                         <ul class="text-[12px] text-[#737373]">
                             <li class="hover:text-primary-color hover:cursor-pointer">Trung Tâm Trợ Giúp</li>
@@ -474,7 +475,7 @@
                             <li class="hover:text-primary-color hover:cursor-pointer">Hướng Dẫn Mua Hàng</li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 md-6 c-6">
                         <p class="font-semibold text-[16px] pb-4 uppercase">Giới thiệu</p>
                         <ul class="text-[12px] text-[#737373]">
                             <li class="hover:text-primary-color hover:cursor-pointer">Trung Tâm Trợ Giúp</li>
@@ -482,7 +483,7 @@
                             <li class="hover:text-primary-color hover:cursor-pointer">Hướng Dẫn Mua Hàng</li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 md-6 c-6">
                         <p class="font-semibold text-[16px] pb-4 uppercase">Theo dõi chúng tôi</p>
                         <ul class="text-[12px] text-[#737373]">
                             <li class="hover:text-primary-color hover:cursor-pointer"><i class="fa fa-facebook pr-2"></i>Facebook</li>
@@ -490,7 +491,7 @@
                             <li class="hover:text-primary-color hover:cursor-pointer"><i class="fa fa-linkedin pr-2"></i>Linkedin</li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 md-6 c-6">
                         <p class="font-semibold text-[16px] pb-4 uppercase">Danh mục</p>
                         <ul class="text-[12px] text-[#737373]">
                             <li class="hover:text-primary-color hover:cursor-pointer">Apple</li>
