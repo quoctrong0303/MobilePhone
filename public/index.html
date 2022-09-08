@@ -22,11 +22,16 @@
 
     <div class="app overflow-hidden">
         <!-- Arrow up -->
-        <button style="display: none;" class="arrow-scroll">
+        <button style="display: none;" class="z-[100] arrow-scroll">
             <div class="fixed right-3 bottom-3 hover:cursor-pointer">
-                <div class="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6" class="text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7l4-4m0 0l4 4m-4-4v18" /></svg>
-                  </div>
+                <div
+                    class="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6" class="text-yellow-500" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                            d="M8 7l4-4m0 0l4 4m-4-4v18" />
+                    </svg>
+                </div>
             </div>
         </button>
         <!-- Navbar-1 -->
@@ -38,7 +43,8 @@
                             <i class="fas fa-envelope p-1 translate-y-[1px]"></i><span>quoctrong0303@gmail.com</span>
                         </a>
                     </div>
-                    <ul class="flex justify-between gap-2">
+                    <!-- Not signed-->
+                    <ul class="hidden flex justify-between gap-2">
                         <li class="">
                             <span class="">Đăng nhập</span> <span>|</span>
                         </li>
@@ -46,20 +52,44 @@
                         <li class="">
                             <span>Đăng ký</span>
                         </li>
-
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f p-1 text-[12px]"></i></a>
-                            <a href="#"><i class="fab fa-instagram-square p-1 text-[12px] "></i></a>
-
-                        </li>
                     </ul>
+                    <!-- Signed in -->
+                    <div class="flex">
+                        <span>Xin chào, Quốc Trọng</span>
+                        <div class="relative group">
+                            <img src="https://via.placeholder.com/50" alt=""
+                                class="hover:cursor-pointer ml-2 rounded-full w-5 h-5">
+                            <!-- User settings -->
+                            <div
+                                class="z-10 w-[150px] bg-white right-[-10px] shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] absolute top-[calc(100%_+_10px)] hidden group-hover:block">
+                                <ul class="p-3">
+                                    <a href="">
+                                        <li class="hover:text-primary-color pb-1">Tài khoản</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="hover:text-primary-color pb-1">Đổi mật khẩu</li>
+                                    </a>
+                                    <a href="">
+                                        <li
+                                            class="hover:text-primary-color  pt-2 border-t-2 border-t-primary-color border-solid">
+                                            Đăng xuất</li>
+                                    </a>
+                                </ul>
+                                <!-- Arrow up -->
+                                <div
+                                    class="absolute border-[20px]  border-b-white border-t-transparent border-l-transparent border-r-transparent top-[-30px] right-0 border-solid">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Navbar-2 -->
         <div class="grids wide mobile:hidden tablet:hidden">
-            <div class="flex h-24 gap-24 items-center">
+            <div class="flex h-24 justify-between items-center">
 
                 <div class="">
                     <a href="#">
@@ -77,9 +107,12 @@
                         <option value="">Xiaomi</option>
                     </select>
                     <!--//remove space
-                --><input type="search" placeholder="Nhập sản phẩm bạn cần tìm..."
+                -->
+                    <div class="relative inline-block">
+                        <input name="p" type="search" placeholder="Nhập sản phẩm bạn cần tìm..."
                         class="focus-visible:shadow-[0_0_5px_#ccc] focus-visible:outline-none p-4 border h-11 w-96 text-[16px]"
                         type="text">
+                    </div>
                     <!--remove space
                 --><button class="rounded-r-lg w-11 h-11 bg-primary-color hover:opacity-80"><i
                             class="text-[20px] fas fa-search"></i></button>
@@ -98,6 +131,62 @@
 
                         </div>
                     </div>
+                </div>
+
+                <div class="relative group">
+
+
+                    <div class="relative">
+                        <a href="">
+                            <svg class="w-10 h-10 text-primary-color" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                                </path>
+                            </svg>
+                            <div class="absolute animate-ping w-2 h-2 top-0 right-[4px] bg-yellow-500 rounded-full">
+                            </div>
+                        </a>
+                        <!-- News settings -->
+                        <div
+                            class="z-10 w-[450px]  bg-white right-0 shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] absolute top-[calc(100%_+_10px)] hidden group-hover:block">
+                            <ul class="p-3 max-h-[450px] overflow-y-auto">
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                    </li>
+                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                    </li>
+                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                    </li>
+                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                    </li>
+                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                </div>
+                            </ul>
+                            <!-- Arrow up -->
+                            <div
+                                class="absolute border-[20px]  border-b-white border-t-transparent border-l-transparent border-r-transparent top-[-30px] right-0 border-solid">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -126,157 +215,173 @@
                             <p>Giỏ hàng</p>
                             <i class="text-[24px] fas fa-shopping-cart"></i>
                         </div>
-                        <div
-                            class="border-solid border-2 border-primary-color absolute top-[1px] right-1 rounded-[99%] w-5 h-5 leading-[16px] text-center text-white text-[12px] bg-black">
+                        <div class="border-solid border-2 border-primary-color 
+                            absolute top-[1px] right-1 rounded-[99%] w-5 h-5 leading-[16px] 
+                            text-center text-white text-[12px] bg-black">
                             <p>3</p>
                         </div>
 
                         <!-- Cart hover -->
-                        <div class="animate-[fadeIn_.2s_ease-in] group-hover:block hidden shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] z-10 bg-white w-[400px] right-0 border-solid rounded-[2px] absolute top-[calc(100%_+_10px)]  ">
+                        <div class="animate-[fadeIn_.2s_ease-in] group-hover:block hidden 
+                        shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] z-10 bg-white w-[400px] 
+                        right-0 border-solid rounded-[2px] absolute top-[calc(100%_+_10px)]  ">
                             <!-- triagle draw -->
-                            <div class="top-[-30px] right-8 absolute border-solid border-[20px] border-b-white border-t-transparent border-r-transparent border-l-transparent">
+                            <div class="top-[-30px] right-8 absolute border-solid border-[20px] 
+                            border-b-white border-t-transparent border-r-transparent border-l-transparent">
 
                             </div>
-                            <h3 class="text-[#757575] text-[12px] m-[8px_0_8px_12px]">Sản phẩm đã thêm</h3>
+                            <h3 class="cursor-default text-[#757575] text-[12px] m-[8px_0_8px_12px]">Sản phẩm đã thêm
+                            </h3>
                             <!-- No carts -->
-                            
+                            <div class="hidden cursor-default">
+                                <img src="./img/empty-cart.webp" alt="">
+                            </div>
                             <!-- Has carts -->
                             <ul class="max-h-[370px] overflow-y-scroll">
                                 <li class="hover:bg-slate-100 flex align-center">
-                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]" src="https://via.placeholder.com/40" alt="">                          
-                                        <div class="w-[100%] mr-3">
-                                            <div class="flex justify-between">
-                                                <h5>Đồng hồ trẻ em</h5>
-                                                <div>
-                                                    <span class="text-yellow-500">2.000.000đ</span>
-                                                    <span class="text-[10px] text-[#757575]">x</span>
-                                                    <span class="text-[12px] text-[#757575]">2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex justify-between">
-                                                <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                                <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
                                         </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li class="hover:bg-slate-100 flex align-center">
-                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]" src="https://via.placeholder.com/40" alt="">                          
-                                        <div class="w-[100%] mr-3">
-                                            <div class="flex justify-between">
-                                                <h5>Đồng hồ trẻ em</h5>
-                                                <div>
-                                                    <span class="text-yellow-500">2.000.000đ</span>
-                                                    <span class="text-[10px] text-[#757575]">x</span>
-                                                    <span class="text-[12px] text-[#757575]">2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex justify-between">
-                                                <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                                <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
                                         </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li class="hover:bg-slate-100 flex align-center">
-                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]" src="https://via.placeholder.com/40" alt="">                          
-                                        <div class="w-[100%] mr-3">
-                                            <div class="flex justify-between">
-                                                <h5>Đồng hồ trẻ em</h5>
-                                                <div>
-                                                    <span class="text-yellow-500">2.000.000đ</span>
-                                                    <span class="text-[10px] text-[#757575]">x</span>
-                                                    <span class="text-[12px] text-[#757575]">2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex justify-between">
-                                                <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                                <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
                                         </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li class="hover:bg-slate-100 flex align-center">
-                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]" src="https://via.placeholder.com/40" alt="">                          
-                                        <div class="w-[100%] mr-3">
-                                            <div class="flex justify-between">
-                                                <h5>Đồng hồ trẻ em</h5>
-                                                <div>
-                                                    <span class="text-yellow-500">2.000.000đ</span>
-                                                    <span class="text-[10px] text-[#757575]">x</span>
-                                                    <span class="text-[12px] text-[#757575]">2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex justify-between">
-                                                <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                                <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
                                         </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li class="hover:bg-slate-100 flex align-center">
-                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]" src="https://via.placeholder.com/40" alt="">                          
-                                        <div class="w-[100%] mr-3">
-                                            <div class="flex justify-between">
-                                                <h5>Đồng hồ trẻ em</h5>
-                                                <div>
-                                                    <span class="text-yellow-500">2.000.000đ</span>
-                                                    <span class="text-[10px] text-[#757575]">x</span>
-                                                    <span class="text-[12px] text-[#757575]">2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex justify-between">
-                                                <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                                <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
                                         </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li class="hover:bg-slate-100 flex align-center">
-                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]" src="https://via.placeholder.com/40" alt="">                          
-                                        <div class="w-[100%] mr-3">
-                                            <div class="flex justify-between">
-                                                <h5>Đồng hồ trẻ em</h5>
-                                                <div>
-                                                    <span class="text-yellow-500">2.000.000đ</span>
-                                                    <span class="text-[10px] text-[#757575]">x</span>
-                                                    <span class="text-[12px] text-[#757575]">2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex justify-between">
-                                                <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                                <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
                                         </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li class="hover:bg-slate-100 flex align-center">
-                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]" src="https://via.placeholder.com/40" alt="">                          
-                                        <div class="w-[100%] mr-3">
-                                            <div class="flex justify-between">
-                                                <h5>Đồng hồ trẻ em</h5>
-                                                <div>
-                                                    <span class="text-yellow-500">2.000.000đ</span>
-                                                    <span class="text-[10px] text-[#757575]">x</span>
-                                                    <span class="text-[12px] text-[#757575]">2</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex justify-between">
-                                                <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                                <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
                                         </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
-                            <div class="p-2 text-right">
-                                <button class="hover:opacity-90 font-semibold text-[12px] p-[8px_12px] bg-primary-color">Xem giỏ hàng</button>
+                            <div class="p-2 text-right cursor-default">
+                                <button
+                                    class="hover:opacity-90 font-semibold text-[12px] p-[8px_12px] bg-primary-color">Xem
+                                    giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -317,7 +422,9 @@
                                         src="http://dientu.webdemo.vn/wp-content/uploads/2018/09/cai-thuoc-la-min-300x169.jpg"
                                         alt="">
                                     <div>
-                                        <p class="group-hover:text-yellow-500 leading-5">Quisque eget purus rhoncus,
+                                        <p class="line-clamp-2 group-hover:text-yellow-500 leading-[22px]">Quisque eget purus rhoncus,
+                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
+                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
                                             pretium libero sed, facilisis nisl</p>
                                         <p class="text-[12px] font-[200] italic">28/09/2018</p>
                                     </div>
@@ -329,7 +436,8 @@
                                         src="http://dientu.webdemo.vn/wp-content/uploads/2018/09/cai-thuoc-la-min-300x169.jpg"
                                         alt="">
                                     <div>
-                                        <p class="group-hover:text-yellow-500 leading-5">Quisque eget purus rhoncus,
+                                        <p class="line-clamp-2 group-hover:text-yellow-500 leading-[22px]">Quisque eget purus rhoncus,
+                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
                                             pretium libero sed, facilisis nisl</p>
                                         <p class="text-[12px] font-[200] italic">28/09/2018</p>
                                     </div>
@@ -341,7 +449,8 @@
                                         src="http://dientu.webdemo.vn/wp-content/uploads/2018/09/cai-thuoc-la-min-300x169.jpg"
                                         alt="">
                                     <div>
-                                        <p class="group-hover:text-yellow-500 leading-5">Quisque eget purus rhoncus,
+                                        <p class="line-clamp-2 group-hover:text-yellow-500 leading-[22px]">Quisque eget purus rhoncus,
+                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
                                             pretium libero sed, facilisis nisl</p>
                                         <p class="text-[12px] font-[200] italic">28/09/2018</p>
                                     </div>
@@ -633,7 +742,10 @@
                 <div class="col l-3 md-6 c-6 mb-5 c-0">
                     <p class="font-semibold text-[16px] pb-2 uppercase">Theo dõi chúng tôi</p>
                     <div class="">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKIDS-107222962129810&tabs&width=280&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKIDS-107222962129810&tabs&width=280&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </div>
             </div>
