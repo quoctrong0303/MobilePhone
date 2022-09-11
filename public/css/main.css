@@ -32,3 +32,15 @@ sẽ được css như bên dưới (điều kiện là items phải là con c�
 .toggle-list.hide .arrow-right {
     display: inline-block;
 }
+
+/* Form validate CSS */
+
+.form-group.invalid input {
+    border: 1px solid red;
+}
+
+.form-group.valid input {
+    border: 1px solid green;
+}
+
+

@@ -391,36 +391,41 @@
 
 
         <!-- Register form -->
-        <div class="p-[100px] min-h-screen bg-gradient-to-tr from-white to-yellow-100">
+        <div class="py-[100px] mobile:px-[20px] min-h-screen bg-gradient-to-tr from-white to-yellow-100">
             <div class="grids wide bg-white rounded-lg h-[50%] shadow-md">
                 <div class="row">
-                    <div class="col l-4">
-                        <img class="h-full" src="https://play-lh.googleusercontent.com/VAY0Hdd9w2VKOgXvv11KB9XzZmbuKmzI7jqD1RSJtQepd3vXM9wpUUO0YUHBJ9u_yxA" alt="">
+                    <div class="col l-4 md-12 c-12">
+                        <img class="mobile:hidden h-full w-full" src="https://play-lh.googleusercontent.com/VAY0Hdd9w2VKOgXvv11KB9XzZmbuKmzI7jqD1RSJtQepd3vXM9wpUUO0YUHBJ9u_yxA" alt="">
                     </div>
-                    <div class="col l-8">
-                        <form method="get" action="./register.html" id="fRegister" class="p-32" action="">
-                            <h2 class="font-semibold text-[24px] text-center">Đăng ký tài khoản</h2><span>Đã có tài khoản?<a href=""> Đăng nhập</a></span>
-                            <div class="form-group row m-[20px_0px]">
-                                <label class="col l-4" for="userName">Tên đăng nhập</label>
-                                <input placeholder="Vui lòng nhập tên đăng nhập..." class="bg-yellow-100 w-[280px] h-[32px] p-5 col l-8" type="text" id="userName">
+                    <div class="col l-8 md-12 c-12">
+                        <form method="get" action="./register.html" id="fRegister" class="mobile:p-5 pc:p-32 tablet:p-5" action="">
+                            <h2 class="font-semibold text-[24px] text-center">Đăng ký tài khoản</h2><span>Đã có tài khoản?<a href="./login.html"> Đăng nhập</a></span>
+                            <div class=" form-group row m-[24px_0px]">
+                                <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="username">Tên đăng nhập</label>
+                                <input name="username" placeholder="Vui lòng nhập tên đăng nhập..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="text" id="username">
+                                <span class="error-message col l-o-4 text-red-600"></span>
                             </div>
-                            <div class="form-group row m-[20px_0px]">
-                                <label class="col l-4" for="fullName">Họ và tên</label>
-                                <input placeholder="Vui lòng nhập họ và tên..." class="bg-yellow-100 w-[280px] h-[32px] p-5 col l-8" type="text" id="fullName">
+                            <div class=" form-group row m-[24px_0px]">
+                                <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="fullname">Họ và tên</label>
+                                <input name="fullname" placeholder="Vui lòng nhập họ và tên..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="text" id="fullname">
+                                <span class="error-message col l-o-4 text-red-600"></span>
                             </div>
-                            <div class="form-group row m-[20px_0px]">
-                                <label class="col l-4" for="email">Email</label>
-                                <input placeholder="Vui lòng nhập email..." class="bg-yellow-100 w-[280px] h-[32px] p-5 col l-8" type="text" id="email">
+                            <div class=" form-group row m-[24px_0px]">
+                                <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="email">Email</label>
+                                <input name="email" placeholder="Vui lòng nhập email..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="email" id="email">
+                                <span class="error-message col l-o-4 text-red-600"></span>
                             </div>
-                            <div class="form-group row m-[20px_0px]">
-                                <label class="col l-4" for="password">Mật khẩu</label>
-                                <input placeholder="Vui lòng nhập mật khẩu..." class="bg-yellow-100 w-[280px] h-[32px] p-5 col l-8" type="text" id="password">
+                            <div class=" form-group row m-[24px_0px]">
+                                <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="password">Mật khẩu</label>
+                                <input name="password" placeholder="Vui lòng nhập mật khẩu..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="password" id="password">
+                                <span class="error-message col l-o-4 text-red-600"></span>
                             </div>
-                            <div class="form-group row m-[20px_0px]">
-                                <label class="col l-4" for="rePassword">Nhập lại mật khẩu</label>
-                                <input placeholder="Vui lòng nhập lại mật khẩu..." class="bg-yellow-100 w-[280px] h-[32px] p-5 col l-8" type="text" id="rePassword">
+                            <div class=" form-group row m-[24px_0px]">
+                                <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="rePassword">Nhập lại mật khẩu</label>
+                                <input name="rePassword" placeholder="Vui lòng nhập lại mật khẩu..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="password" id="rePassword">
+                                <span  class="error-message col l-o-4 text-red-600"></span>
                             </div>
-                            <button class="float-right btn-primary">
+                            <button type="submit" class="mb-4 tablet:w-full mobile:w-full float-right btn-primary">
                                 Đăng ký
                             </button>
                         </form>
@@ -478,12 +483,28 @@
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/validator.js"></script>
     <script src="./js/splide.min.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/additional-methods.min.js"></script>
     <script>
-        
+        options = {
+            rules: {
+                'username': ['required', 'max:20'],
+                'email' : ['required', 'email'],
+                'fullname': ['required'],
+                'password': ['required', 'min:6'],
+                'rePassword': ['required', 'match:password']
+
+            },
+            messages: {
+                'required': 'Vui lòng nhập trường này!',
+                'email' : 'Email không hợp lệ!',
+                'min:6' : 'Vui lòng nhập ít nhất 6 ký tự!',
+                'max:20' : 'Tên đăng nhập tối da 20 ký tự!',
+                'match:password' : 'Mật khẩu không khớp!'
+            },
+            isCallAPI: true,
+        }
+        validator('#fRegister', options);
     </script>
     <script>
         new Splide('.splide', {
