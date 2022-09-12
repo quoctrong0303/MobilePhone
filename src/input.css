@@ -6,4 +6,12 @@
     .btn-primary {
       @apply py-2 px-4 bg-primary-color text-white font-semibold rounded-lg shadow-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75;
     }
+    .active {
+      @apply relative border-primary-color border-solid border-2 after:content-['✓'] after:absolute after:top-0 after:left-0 after:px-1 after:bg-primary-color after:rounded-br-lg !important;
+    }
   }
+
+
+
+  /* Notes */
+  /* Ring: Vòng, giống outline, border */

@@ -48,8 +48,23 @@ const app = {
       document.documentElement.scrollTop = 0;
     };
   },
+  showLoadingButton: (formSelector) => {
+    let form = $(formSelector);
+    let btnElement = form.querySelector(".button");
+    let btnElementLoading = form.querySelector(".loading");
+    btnElement.style.display = "none";
+    btnElementLoading.style.display = "inline-flex";
+  },
+  hideLoadingButton: (formSelector) => {
+    let form = $(formSelector);
+    let btnElement = form.querySelector(".button");
+    let btnElementLoading = form.querySelector(".loading");
+    btnElement.style.display = "block";
+    btnElementLoading.style.display = "none";
+  },
   start: () => {
     app.scrollButton();
+    // app.showLoadingButton("#fLogin");
   },
 };
 app.start();

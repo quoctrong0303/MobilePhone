@@ -14,7 +14,10 @@ const validator = (selector, options) => {
     if (isValid) {
       if (options.isCallAPI) {
         console.log(data);
+        // Hiện nút loading cho giao diện đẹp hơn
+        app.showLoadingButton(selector);
       } else {
+        app.showLoadingButton(selector);
         form.submit();
       }
     }
