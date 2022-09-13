@@ -9,6 +9,8 @@
     .active {
       @apply relative border-primary-color border-solid border-2 after:content-['✓'] after:absolute after:top-0 after:left-0 after:px-1 after:bg-primary-color after:rounded-br-lg !important;
     }
+    
+    
   }
 
 
