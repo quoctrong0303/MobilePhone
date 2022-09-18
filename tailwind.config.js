@@ -23,9 +23,15 @@ module.exports = {
         // => @media (min-width: 1024px) { ... }
       },
       keyframes: {
+        // Animation hiện lên từ từ
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        // Animation trượt từ trên xuống
+        slideAndFade: {
+          "0%": { opacity: "0", transform: "translateY(-20.25rem)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
       animations: {},

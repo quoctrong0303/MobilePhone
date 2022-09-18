@@ -109,7 +109,7 @@
                     <!--//remove space
                 -->
                     <div class="relative inline-block">
-                        <input name="p" type="search" placeholder="Nhập sản phẩm bạn cần tìm..."
+                        <input disabled name="p" type="search" placeholder="Nhập sản phẩm bạn cần tìm..."
                             class="focus-visible:shadow-[0_0_5px_#ccc] focus-visible:outline-none p-4 border h-11 w-96 text-[16px]"
                             type="text">
                     </div>
@@ -405,350 +405,63 @@
             </div>
         </div>
 
-        <!-- Slider and Posts -->
-        <div class="bg-slate-200 pt-3 min-h-[348px]">
-            <div class="grids wide">
-                <div class="row">
-                    <!-- Slider -->
-                    <div class="col l-8 md-12 c-12">
-                        <section class="splide" aria-label="Splide Basic HTML Example">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide"><img class="h-[316px] w-[100%]"
-                                            src="./img/banners/banner1.jpg" alt="" srcset=""></li>
-                                    <li class="splide__slide"><img class="h-[316px] w-[100%]"
-                                            src="./img/banners/banner2.webp" alt="" srcset=""></li>
-                                    <li class="splide__slide"><img class="h-[316px] w-[100%]"
-                                            src="./img/banners/banner3.jpg" alt="" srcset=""></li>
-                                    <li class="splide__slide"><img class="h-[316px] w-[100%]"
-                                            src="./img/banners/banner4.jpg" alt="" srcset=""></li>
+        <!-- Profile -->
+        <div class="min-h-screen bg-gradient-to-tr from-white p-10 to-yellow-200">
+            <div class="flex justify-center items-center">
+                <div class="shadow-lg bg-white p-10 w-[480px] relative">
+                    <form action="" id="fProfile">
+                        <!-- Image and name -->
+                        <div class="flex items-center ">
+                            <img src="./img/uploads/—Pngtree—cartoon color simple male avatar_5230557.png" class="avatar-profile object-contain shadow-md mr-5 p-1 h-[100px] w-[100px] rounded-full" alt="">
+                            <p class="font-semibold  text-[#aaa] text-[24px]">Võ Quốc Trọng</p>
+                        </div>
+                        <!-- Edit avatar or remove avatar -->
+                        <!-- Để positon absolute để khi toggle button, chiều dài của wrapper không bị co giãn
+                        mất thẩm mĩ -->
+                        <div class="p-2 ml-3 absolute">
+                            <i title="Thay đổi avatar" class="hidden button-edit fas fa-pen mr-2 hover:text-primary-color hover:cursor-pointer"></i>
+                            <i title="Xoá avatar" class="hidden button-remove fas fa-trash hover:text-primary-color hover:cursor-pointer"></i>
+                            <input name="avatar" id="fileAvatar" type="file" hidden>
+                        </div>
+                        <!-- Full profile -->
+                        <div class="mt-10">
+                            <div class="form-group row items-center border-b-[1px] border-solid border-black">
+                                <label for="fullname" class="col l-4 font-semibold">Họ và tên:</label>
+                                <input name="fullname" disabled id="fullname" class="disabled:bg-white disabled:text-[#aaa] p-2 col l-8 focus:outline-none text-[#666]" type="text" value="Võ Quốc Trọng">
                             </div>
-                        </section>
-                    </div>
 
-                    <!-- Posts -->
-                    <div class="col l-4 md-0 c-0">
-                        <div class="min-h-[316px] bg-white">
-                            <div class="p-4 bg-yellow-500"><span class="uppercase font-semibold"><i
-                                        class="fas fa-blog pr-2"></i>bài viết hữu ích</span></div>
-                            <div class="">
-                                <div
-                                    class="group hover:cursor-pointer border-b-2 border-gray-100 border-solid p-[12px_8px] flex">
-                                    <img class="pr-3 object-contain h-[60px] w-[84px]"
-                                        src="http://dientu.webdemo.vn/wp-content/uploads/2018/09/cai-thuoc-la-min-300x169.jpg"
-                                        alt="">
-                                    <div>
-                                        <p class="line-clamp-2 group-hover:text-yellow-500 leading-[22px]">Quisque eget
-                                            purus rhoncus,
-                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
-                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
-                                            pretium libero sed, facilisis nisl</p>
-                                        <p class="text-[12px] font-[200] italic">28/09/2018</p>
-                                    </div>
-                                </div>
+                            <div class="form-group row items-center border-b-[1px] border-solid border-black">
+                                <label for="username" class="col l-4 font-semibold">Tên đăng nhập:</label>
+                                <input name="username" disabled id="username" class="disabled:bg-white disabled:text-[#aaa] p-2 col l-8 focus:outline-none text-[#666]" type="text" value="quoctrong0303">
+                            </div>
 
-                                <div
-                                    class="group hover:cursor-pointer border-b-2 border-gray-100 border-solid p-[12px_8px] flex">
-                                    <img class="pr-3 object-contain h-[60px] w-[84px]"
-                                        src="http://dientu.webdemo.vn/wp-content/uploads/2018/09/cai-thuoc-la-min-300x169.jpg"
-                                        alt="">
-                                    <div>
-                                        <p class="line-clamp-2 group-hover:text-yellow-500 leading-[22px]">Quisque eget
-                                            purus rhoncus,
-                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
-                                            pretium libero sed, facilisis nisl</p>
-                                        <p class="text-[12px] font-[200] italic">28/09/2018</p>
-                                    </div>
-                                </div>
+                            <div class="form-group row items-center border-b-[1px] border-solid border-black">
+                                <label for="numberphone" class="col l-4 font-semibold">Số điện thoại:</label>
+                                <input name="numberphone" disabled id="numberphone" class="disabled:bg-white disabled:text-[#aaa] p-2 col l-8 focus:outline-none text-[#666]" type="tel" value="0384122297">
+                            </div>
 
-                                <div
-                                    class="group hover:cursor-pointer border-b-2 border-gray-100 border-solid p-[12px_8px] flex">
-                                    <img class="pr-3 object-contain h-[60px] w-[84px]"
-                                        src="http://dientu.webdemo.vn/wp-content/uploads/2018/09/cai-thuoc-la-min-300x169.jpg"
-                                        alt="">
-                                    <div>
-                                        <p class="line-clamp-2 group-hover:text-yellow-500 leading-[22px]">Quisque eget
-                                            purus rhoncus,
-                                            pretium libero sed, facilisis nislQuisque eget purus rhoncus,
-                                            pretium libero sed, facilisis nisl</p>
-                                        <p class="text-[12px] font-[200] italic">28/09/2018</p>
-                                    </div>
-                                </div>
+                            <div class="form-group row items-center border-b-[1px] border-solid border-black">
+                                <label for="email" class="col l-4 font-semibold">Email:</label>
+                                <input name="email" disabled id="email" class="disabled:bg-white disabled:text-[#aaa] p-2 col l-8 focus:outline-none text-[#666]" type="email" value="quoctrong0303@gmail.com">
+                            </div>
 
+                            <div class="form-group row items-center border-b-[1px] border-solid border-black">
+                                <label for="address" class="col l-4 font-semibold">Địa chỉ:</label>
+                                <textarea name="address" disabled id="address" class="disabled:bg-white disabled:text-[#aaa] overflow-hidden resize-none h-[92px] p-2 col l-8 focus:outline-none text-[#666]" type="text">47 KDC Quân Báo Phường Long Tuyền Quận Bình Thuỷ TP. Cần Thơ</textarea>
+                            </div>
 
+                            <div class="btnUpdate form-group row items-center pt-5 justify-center">
 
+                                <button type="submit" id="btnUpdateInfo" class="btn-primary disabled:btn-disabled w-full">Cập nhật thông tin</button>                           
+                            </div>
+                            
+                            <div class="btnUpdating hidden form-group row justify-between pt-5">
+                                <button type="submit" id="btnSave" class="btn-save col c-6 md-6 l-6 disabled:btn-disabled">Lưu</button>
+                                <button type="submit" id="btnCancel" class="btn-cancel col c-4 md-4 l-4 disabled:btn-disabled">Huỷ bỏ</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-4">
-            <!-- Product 1 -->
-            <div class="">
-                <div class="pt-5 pb-2 bg-white">
-                    <div class="grids wide">
-                        <div
-                            class=" bg-slate-200 relative after:border-r-transparent after:border-b-transparent after:inline-block after:absolute after:border-[16px] after:border-yellow-500 after:border-solid border-yellow-500 border-solid border-t-2 ">
-                            <span class="uppercase font-semibold p-[4px_8px] bg-yellow-500 inline-block"><i
-                                    class="fa fa-apple pr-2"></i>Apple</span>
-                            <span
-                                class="hover:cursor-pointer text-yellow-600 float-right inline-block pr-3 leading-[34px]">Xem
-                                tất cả<i class=" pl-3 fas fa-chevron-right"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="grids wide">
-                    <div class="row pt-1 mobile:p-[0_8px]">
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/343/934/products/iphone-8-red-do-1-400x460.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">iPhone 8
-                                    64GB</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://dienthoaimoi.vn/images/products/2020/11/12/resized/ip8_den_1605168857.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">iPhone 8
-                                    64GB</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="./img/products/phone/apple/kisspng-iphone-x-iphone-8-apple-facetime-lte-iphone-10-5b10f37d2d2de0.3929770115278375651851.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://bizweb.dktcdn.net/100/372/934/products/11-den.png?v=1582103575993"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="./img/products/phone/apple/ip12_den_1626080558png_1626251155.png" alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="">
-                <div class="pt-5 pb-2 bg-white">
-                    <div class="grids wide">
-                        <div
-                            class=" bg-slate-200 relative after:border-r-transparent after:border-b-transparent after:inline-block after:absolute after:border-[16px] after:border-yellow-500 after:border-solid border-yellow-500 border-solid border-t-2 ">
-                            <span class="uppercase font-semibold p-[4px_8px] bg-yellow-500 inline-block"><i
-                                    class="fa fa-apple pr-2"></i>Apple</span>
-                            <span
-                                class="hover:cursor-pointer text-yellow-600 float-right inline-block pr-3 leading-[34px]">Xem
-                                tất cả<i class=" pl-3 fas fa-chevron-right"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="grids wide">
-                    <div class="row pt-1 mobile:p-[0_8px]">
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/343/934/products/iphone-8-red-do-1-400x460.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">iPhone 8
-                                    64GB</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://dienthoaimoi.vn/images/products/2020/11/12/resized/ip8_den_1605168857.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">iPhone 8
-                                    64GB</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="./img/products/phone/apple/kisspng-iphone-x-iphone-8-apple-facetime-lte-iphone-10-5b10f37d2d2de0.3929770115278375651851.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://bizweb.dktcdn.net/100/372/934/products/11-den.png?v=1582103575993"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="./img/products/phone/apple/ip12_den_1626080558png_1626251155.png" alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="">
-                <div class="pt-5 pb-2 bg-white">
-                    <div class="grids wide">
-                        <div
-                            class=" bg-slate-200 relative after:border-r-transparent after:border-b-transparent after:inline-block after:absolute after:border-[16px] after:border-yellow-500 after:border-solid border-yellow-500 border-solid border-t-2 ">
-                            <span class="uppercase font-semibold p-[4px_8px] bg-yellow-500 inline-block"><i
-                                    class="fa fa-apple pr-2"></i>Apple</span>
-                            <span
-                                class="hover:cursor-pointer text-yellow-600 float-right inline-block pr-3 leading-[34px]">Xem
-                                tất cả<i class=" pl-3 fas fa-chevron-right"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="grids wide">
-                    <div class="row pt-1 mobile:p-[0_8px]">
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/343/934/products/iphone-8-red-do-1-400x460.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">iPhone 8
-                                    64GB</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://dienthoaimoi.vn/images/products/2020/11/12/resized/ip8_den_1605168857.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">iPhone 8
-                                    64GB</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="./img/products/phone/apple/kisspng-iphone-x-iphone-8-apple-facetime-lte-iphone-10-5b10f37d2d2de0.3929770115278375651851.png"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="https://bizweb.dktcdn.net/100/372/934/products/11-den.png?v=1582103575993"
-                                    alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-                        <div class="col l-2-4 md-4 c-6">
-                            <div
-                                class="h-[316px] transition ease-in-out duration-300 hover:scale-105 mb-2 p-2 border hover:cursor-pointer hover:border-yellow-500 border-gray-300 border-solid relative after:absolute after:rounded-[99%] after:content-['50%'] after:p-1 after:text-center after:bg-primary-color/80 after:h-10 after:w-10 after:font-semibold after: after:top-4">
-                                <img class="object-cover block m-auto h-[228px] w-[168px]"
-                                    src="./img/products/phone/apple/ip12_den_1626080558png_1626251155.png" alt="">
-                                <span class="line-clamp-2 text-yellow-600 pb-3 leading-[20px] max-h-[40px]">Máy lọc
-                                    không
-                                    khí Sharp FF-F30E Máy lọc không khí Sharp FF-F30E Máy lọc không khí Sharp
-                                    FF-F30E</span>
-                                <span class="block text-red-500 font-semibold text-[20px]">2.300.000<span class="align-top text-[12px]"> VNĐ</span></span>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
+                        
+                    </form>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ const validator = (selector, options) => {
   form.onsubmit = (e) => {
     let data = {};
     e.preventDefault();
-    let inputs = form.querySelectorAll("[name]");
+    let inputs = form.querySelectorAll("input[name]");
     inputs.forEach((input) => {
       data[input.name] = input.value;
       handleValidate(input);
@@ -90,7 +90,7 @@ const validator = (selector, options) => {
   messages = options.messages;
   if (form) {
     //lấy tát cả input có attribute name
-    let inputs = form.querySelectorAll("[name]");
+    let inputs = form.querySelectorAll("input[name]");
     inputs.forEach((input) => {
       //Xử lý input khi focus
       input.onfocus = () => {
