@@ -7,9 +7,14 @@ const validator = (selector, options) => {
     let data = {};
     e.preventDefault();
     let inputs = form.querySelectorAll("input[name]");
+    let textareas = form.querySelectorAll("textarea[name]");
     inputs.forEach((input) => {
       data[input.name] = input.value;
       handleValidate(input);
+    });
+    textareas.forEach((textarea) => {
+      data[textarea.name] = textarea.value;
+      handleValidate(textarea);
     });
     if (isValid) {
       if (options.isCallAPI) {
@@ -25,7 +30,9 @@ const validator = (selector, options) => {
   //Định nghĩa hàm sử lý hiển thị lỗi
   const handleMessage = {
     showErrors: (inputElement, messages, errorElement) => {
+      // Lấy element wrap input và element lỗi
       let parent = inputElement.parentElement;
+      // Sau đó từ element cha tìm element lỗi
       let error = parent.querySelector(errorElement);
       parent.classList.remove("valid");
       parent.classList.add("invalid");

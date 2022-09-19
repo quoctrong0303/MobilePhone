@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo/6398f61cdd8d9ea570d48b7c68d33132.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <!-- <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css"> -->
+    <script src="https://kit.fontawesome.com/11fdb00ab9.js" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="app overflow-hidden">
+        <!-- Arrow up -->
+        <button style="display: none;" class="z-[100] arrow-scroll">
+            <div class="fixed z-[1000] right-3 bottom-3 hover:cursor-pointer">
+                <div
+                    class="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6" class="text-yellow-500" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                            d="M8 7l4-4m0 0l4 4m-4-4v18" />
+                    </svg>
+                </div>
+            </div>
+        </button>
+        <!-- Navbar-1 -->
+        <div class="bg-primary-color h-8">
+            <div class="grids wide mobile:p-[0_12px]">
+                <div class="flex justify-between items-center h-8 text-[12px] font-semibold">
+                    <div class="">
+                        <a href="mailto:quoctrong0303@gmail.com" class="">
+                            <i class="fas fa-envelope p-1 translate-y-[1px]"></i><span>quoctrong0303@gmail.com</span>
+                        </a>
+                    </div>
+                    <!-- Not signed-->
+                    <ul class="hidden flex justify-between gap-2">
+                        <li class="">
+                            <span class="">Đăng nhập</span> <span>|</span>
+                        </li>
+
+                        <li class="">
+                            <span>Đăng ký</span>
+                        </li>
+                    </ul>
+                    <!-- Signed in -->
+                    <div class="flex">
+                        <span>Xin chào, Quốc Trọng</span>
+                        <div class="relative group">
+                            <img src="https://via.placeholder.com/50" alt=""
+                                class="hover:cursor-pointer ml-2 rounded-full w-5 h-5">
+                            <!-- User settings -->
+                            <div
+                                class="z-10 w-[150px] bg-white right-[-10px] shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] absolute top-[calc(100%_+_10px)] animate-[fadeIn_.2s_ease-in] hidden group-hover:block">
+                                <ul class="p-3">
+                                    <a href="">
+                                        <li class="hover:text-primary-color pb-1">Tài khoản</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="hover:text-primary-color pb-1">Đổi mật khẩu</li>
+                                    </a>
+                                    <a class="" href="">
+                                        <li
+                                            class="hover:text-primary-color  pt-2 border-t-2 border-t-primary-color border-solid">
+                                            Đăng xuất</li>
+                                    </a>
+                                </ul>
+                                <!-- Arrow up -->
+                                <div
+                                    class="absolute border-[20px]  border-b-white border-t-transparent border-l-transparent border-r-transparent top-[-30px] right-0 border-solid">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar-2 -->
+        <div class="grids wide mobile:hidden tablet:hidden">
+            <div class="flex h-24 justify-between items-center">
+
+                <div class="">
+                    <a href="#">
+                        <img class="border-2 border-solid border-yellow-500 h-[60px] object-contain"
+                            src="https://images-platform.99static.com//bQzsVFJaxHG3baYYDtmtfidqxJ4=/0x0:1200x1200/fit-in/500x500/99designs-contests-attachments/91/91295/attachment_91295374"
+                            alt="" srcset="">
+                    </a>
+                </div>
+
+                <div>
+                    <select class="border h-11 hover:opacity-80" name="viewport" id="">
+                        <option selected value="">All</option>
+                        <option value="">Apple</option>
+                        <option value="">Samsung</option>
+                        <option value="">Xiaomi</option>
+                    </select>
+                    <!--//remove space
+                -->
+                    <div class="relative inline-block">
+                        <input name="p" type="search" placeholder="Nhập sản phẩm bạn cần tìm..."
+                            class="focus-visible:shadow-[0_0_5px_#ccc] focus-visible:outline-none p-4 border h-11 w-96 text-[16px]"
+                            type="text">
+                    </div>
+                    <!--remove space
+                --><button class="rounded-r-lg w-11 h-11 bg-primary-color hover:opacity-80"><i
+                            class="text-[20px] fas fa-search"></i></button>
+                </div>
+
+                <div>
+                    <div class="flex gap-4">
+                        <div class="">
+                            <a class="" href="tel:0384122297">
+                                <i class="translate-y-[7px] text-[42px] text-yellow-500 fas fa-mobile-alt"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <span class="block">Hotline đặt hàng</span>
+                            <span class="block text-[20px] text-yellow-500 font-semibold">0384122297</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <!-- Class group giúp định nghĩa nguyên thẻ div là một nhóm, khi các thẻ con xài group-hover có nghĩa là khi hover vào thẻ chứa group thì thẻ chưa group-hover sẽ được CSS -->
+
+                    <div class="relative">
+                        <a href="">
+                            <svg class="w-10 h-10 text-primary-color" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                                </path>
+                            </svg>
+                            <div class="absolute animate-ping w-2 h-2 top-0 right-[4px] bg-yellow-500 rounded-full">
+                            </div>
+                        </a>
+                        <!-- News settings -->
+                        <div
+                            class="z-10 w-[450px]  bg-white right-0 shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] animate-[fadeIn_.2s_ease-in]  absolute top-[calc(100%_+_10px)] hidden group-hover:block">
+                            <ul class="p-3 max-h-[450px] overflow-y-auto">
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
+                                    </li>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
+                                    </li>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
+                                    </li>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
+                                        <span>[NÓNG]</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
+                                    </li>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
+                                </div>
+                            </ul>
+                            <!-- Arrow up -->
+                            <div
+                                class="absolute border-[20px]  border-b-white border-t-transparent border-l-transparent border-r-transparent top-[-30px] right-0 border-solid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navbar-3 -->
+        <div class="h-11 bg-yellow-500 mobile:hidden tablet:hidden">
+            <div class="grids wide">
+                <div class="h-11 flex justify-between items-center font-semibold">
+                    <div class="flex h-11">
+                        <p class="bg-primary-color hover:cursor-pointer p-2">Trang chủ</p>
+                        <a class="hover:bg-primary-color hover:opacity-80 hover:cursor-pointer p-2"
+                            href="/public/shop.html">
+                            <p class="">Sản phẩm</p>
+                        </a>
+                        <p class="hover:bg-primary-color hover:opacity-80 hover:cursor-pointer p-2">Tin tức</p>
+                        <p class="hover:bg-primary-color hover:opacity-80 hover:cursor-pointer p-2">Bán chạy</p>
+                        <p class="hover:bg-primary-color hover:opacity-80 hover:cursor-pointer p-2">Đơn hàng</p>
+                        <p class="hover:bg-primary-color hover:opacity-80 hover:cursor-pointer p-2">Phản hồi</p>
+                    </div>
+
+                    <div
+                        class="group relative  hover:cursor-pointer font-semibold bg-primary-color p-[4px_12px] rounded-lg">
+                        <!-- Cart -->
+                        <div class="flex gap-2 justify-center items-center">
+                            <p>Giỏ hàng</p>
+                            <i class="text-[24px] fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="border-solid border-2 border-primary-color 
+                            absolute top-[1px] right-1 rounded-[99%] w-5 h-5 leading-[16px] 
+                            text-center text-white text-[12px] bg-black">
+                            <p id="cart-count">7</p>
+                        </div>
+
+                        <!-- Cart hover -->
+                        <div class="animate-[fadeIn_.2s_ease-in] group-hover:block hidden 
+                        shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] z-10 bg-white w-[400px] 
+                        right-0 border-solid rounded-[2px] absolute top-[calc(100%_+_10px)]  ">
+                            <!-- triagle draw -->
+                            <div class="top-[-30px] right-8 absolute border-solid border-[20px] 
+                            border-b-white border-t-transparent border-r-transparent border-l-transparent">
+
+                            </div>
+                            <h3 class="cursor-default text-[#757575] text-[12px] m-[8px_0_8px_12px]">Sản phẩm đã thêm
+                            </h3>
+                            <!-- No carts -->
+                            <div class="hidden cursor-default">
+                                <img src="./img/empty-cart.webp" alt="">
+                            </div>
+                            <!-- Has carts -->
+                            <ul class="max-h-[370px] overflow-y-scroll">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
+                                    <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
+                                        src="https://via.placeholder.com/40" alt="">
+                                    <div class="w-[100%] mr-3">
+                                        <div class="flex justify-between">
+                                            <h5>Đồng hồ trẻ em</h5>
+                                            <div>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
+                                                <span class="text-[10px] text-[#757575]">x</span>
+                                                <span class="text-[12px] text-[#757575]">2</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between">
+                                            <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="p-2 text-right cursor-default">
+                                <button
+                                    class="hover:opacity-90 font-semibold text-[12px] p-[8px_12px] bg-primary-color">Xem
+                                    giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post -->
+        <div class="p-10 min-h-screen bg-gradient-to-tr from-white to-yellow-100">
+             <div class="grids wide bg-white p-5 shadow-lg">
+                <div class="row">
+                    <div class="col l-8 md-12 c-12">
+                        <div class="p-3 border-b-[1px] border-solid border-b-[#eee]">
+                            <h3 class="font-semibold text-[20px] text-[#444]">Bài viết</h3>
+                        </div>
+                        <div class="relative mt-5">
+                            <img class=" w-full object-contain" src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/690x300_GALAXY-Z-FLIP-4-256GB-FLEX-MODE-COLLECTION-final.png" alt="">
+                            <div class="absolute bottom-0 bg-black/50 h-[120px] w-full p-4">
+                                <h5 title=">Dự đoán cấu hình Samsung Galaxy Note 30 Ultra 5G: Màn hình siêu to, RAM đến 18GB, ngồi đếm số camera sau thôi cũng mệt!" class="text-white font-bold text-[20px] leading-30 line-clamp-2">Dự đoán cấu hình Samsung Galaxy Note 30 Ultra 5G: Màn hình siêu to, RAM đến 18GB, ngồi đếm số camera sau thôi cũng mệt!</h5>
+                                <div class="flex gap-3 text-[12px] p-1">
+                                    <div class="text-white">
+                                        <i class="fas fa-user-edit mr-1 p-1"></i><span>Admin</span>
+                                    </div>
+                                    <div class="text-white">
+                                        <i class="fas fa-clock mr-1 p-1"></i><span>5/12/2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post content -->
+                        <div class="">
+                            <div class="p-5" id="product_info-content">
+                                <h3 style="box-sizing: border-box; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 500; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; margin: 20px 0px 15px; background-color: #ffffff; padding: 0px; outline: none;">Mỗi lần ra mắt phiên bản mới là mỗi lần&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 18px; outline: none;" title="Tham khảo điện thoại iPhone tại Thegioididong.com" href="https://www.thegioididong.com/dtdd-apple-iphone" target="_blank" rel="noopener">iPhone</a>&nbsp;chiếm sóng trên khắp các mặt trận và lần này cái tên khiến vô số người "sục sôi" là&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 18px; outline: none;" title="Tham khảo giá điện thoại iPhone 13 Pro chính hãng" href="https://www.thegioididong.com/dtdd/iphone-13-pro" target="_blank" rel="noopener">iPhone 13 Pro</a>, chiếc&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 18px; outline: none;" title="Điện thoại thông minh đang bán tại Thegioididong.com" href="https://www.thegioididong.com/dtdd" target="_blank" rel="noopener">điện thoại thông minh</a>&nbsp;vẫn giữ nguyên thiết kế cao cấp, cụm 3 camera được nâng cấp, cấu hình mạnh mẽ cùng thời lượng pin lớn ấn tượng.&nbsp;</h3>
+                                <h3 style="box-sizing: border-box; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 500; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; margin: 20px 0px 15px; background-color: #ffffff; padding: 0px; outline: none;">Thiết kế đặc trưng với màu sắc thời thượng</h3>
+                                <div class="parameter-item" style="box-sizing: border-box; font-size: 14px; text-align: start; margin: 0px; padding: 0px 30px;">
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">iPhone 13 Pro không có nhiều sự thay đổi về thiết kế, khi máy vẫn sở hữu kiểu dáng tương tự như&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s;" title="Tham khảo giá điện thoại iPhone 12 Pro chính hãng" href="https://www.thegioididong.com/dtdd/iphone-12-pro" target="_blank" rel="noopener">iPhone 12 Pro</a>&nbsp;với các cạnh viền vuông vắn và hai mặt kính cường lực cao cấp. Sở hữu 4 phiên bản màu gồm xanh dương, bạc, vàng đồng và xám cho bạn tùy chọn theo sở thích của mình.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-1.jpg"><img class=" ls-is-cached lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Sở hữu 4 phiên bản màu sắc trẻ trung - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-1.jpg" alt="Sở hữu 4 phiên bản màu sắc trẻ trung - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-1.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Máy đạt tiêu chuẩn&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s;" title="Tham khảo điện thoại chống nước bụi tại Thế Giới Di Động" href="https://www.thegioididong.com/dtdd-chong-nuoc-bui" target="_blank" rel="noopener">kháng nước và bụi</a>&nbsp;IP68 có khả năng chống lại một số hạt bụi, và được bảo vệ khi rơi xuống nước ở độ sâu đến 6 mét trong 30 phút&nbsp;theo chuẩn IEC 60529, thoải mái nhắn tin khi lỡ ra ngoài gặp mưa, chụp ảnh tự tin khi đi hồ bơi, bãi biển,...</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-2.jpg"><img class=" ls-is-cached lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Khả năng kháng bụi, nước - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-2.jpg" alt="Khả năng kháng bụi, nước - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-2.jpg"></a></p>
+                                </div>
+                                <h3 style="box-sizing: border-box; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 500; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; margin: 20px 0px 15px; background-color: #ffffff; padding: 0px; outline: none;">Nâng cấp màn hình với tần số quét 120 Hz</h3>
+                                <div class="parameter-item" style="box-sizing: border-box; font-size: 14px; text-align: start; margin: 0px; padding: 0px 30px;">
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Chiếc iPhone 13 Pro vẫn được trang bị màn hình kích thước 6.1 inch, với phần tai thỏ được làm nhỏ hơn giúp hiển thị thêm nhiều thông tin cũng như tăng cường cảm giác trải nghiệm. Bề mặt có lớp phủ oleophobic chống bám vân tay, giữ cho màn hình luôn được sạch mới.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-man-hinh.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Trang bị màn hình 6.1 inch - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-man-hinh.jpg" alt="Trang bị màn hình 6.1 inch - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-man-hinh.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">iPhone 13 Pro đã được nâng cấp lên tần số quét 120 Hz, với ProMotion có thể làm mới từ 10 đến 120 khung hình/giây. Với tần số quét cao, mọi thao tác chuyển cảnh khi lướt ngón tay trên màn hình trở nên mượt mà hơn đồng thời hiệu ứng thị giác khi chúng ta dùng&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s;" title="Tham khảo các mẫu điện thoại chơi game tại Thế Giới Di Động" href="https://www.thegioididong.com/dtdd-choi-game" target="_blank" rel="noopener">điện thoại chơi game</a>&nbsp;hoặc xem video cũng cực kỳ mãn nhãn.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-5.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Chuyển động mượt mà nhờ tần số 120 Hz - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-5.jpg" alt="Chuyển động mượt mà nhờ tần số 120 Hz - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-5.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Tốc độ làm tươi tự động tăng lên để hiển thị hiệu suất đồ họa, tự động giảm xuống khi không sử dụng để tiết kiệm năng lượng và tốc độ làm mới cũng được tự tinh chỉnh linh động để phù hợp hơn tốc độ lướt của ngón tay bạn.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-4.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Tốc độ làm tươi được tự động hóa - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-4.jpg" alt="Tốc độ làm tươi được tự động hóa - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-4.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Sử dụng tấm nền OLED có số điểm ảnh lên đến 1170 x 2532 Pixels, độ sáng điển hình 1000 nits, khi hiển thị video HDR 1200 nits, tăng lên 25% khi đặt dưới ánh mặt trời, sắc đen hiển thị sâu, sắc sáng tươi tắn, khung hình sinh động như thực.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-6.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Độ sáng đạt 1200 nits - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-6.jpg" alt="Độ sáng đạt 1200 nits - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-6.jpg"></a></p>
+                                </div>
+                                <h3 style="box-sizing: border-box; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 500; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; margin: 20px 0px 15px; background-color: #ffffff; padding: 0px; outline: none;">Quay chụp đỉnh cao với camera Pro</h3>
+                                <div class="parameter-item" style="box-sizing: border-box; font-size: 14px; text-align: start; margin: 0px; padding: 0px 30px;">
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">iPhone 13 Pro có bộ camera 3 ống kính 12 MP xếp xen kẽ thành một cụm vuông, đặt ở góc trên bên trái của lưng máy gồm camera tele, camera góc siêu rộng (Ultra&nbsp;Wide) khẩu độ f/1.8, góc nhìn đến 120 độ và camera chính góc rộng (Wide) với khẩu độ f/1.5.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-7.jpg"><img class="lazyload" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; opacity: 0; display: block; height: auto !important;" title="Bộ ba ống kính chuyên nghiệp - iPhone 13 Pro 128GB" alt="Bộ ba ống kính chuyên nghiệp - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-7.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Camera Ultra Wide được làm mới có thể lấy nét tự động trong khoảng cách 2 cm, giúp phóng to hình ảnh của giọt sương, lông chim, cát vàng,... tạo nên những tuyệt tác nghệ thuật chỉ bằng một thao tác chụp đơn giản. Camera này cũng cho khả năng quay cảnh chuyển động tua nhanh thời gian hoặc chuyển động chậm linh hoạt để bạn làm video giải trí cực đẹp.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-8.jpg"><img class="lazyload" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; opacity: 0; display: block; height: auto !important;" title="Camera Ultra Wide lấy nét cực ấn tượng - iPhone 13 Pro 128GB" alt="Camera Ultra Wide lấy nét cực ấn tượng - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-8.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Apple gọi iPhone 13 Pro là thiết bị được tạo ra cho ánh sáng yếu, bởi hệ thống camera được hỗ trợ chế độ ban đêm Night Mode, trang bị&nbsp;máy quét LiDAR (khả dụng cho chế độ chụp chân dung ban đêm), camera Wide nâng cao độ sáng đến 2.2 lần, camera Ultra Wide tăng 92% độ sáng cho phép quay chụp lại các hình ảnh, thước phim ban đêm cực kỳ chi tiết, sắc nét.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-9.jpg"><img class="lazyload" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; opacity: 0; display: block; height: auto !important;" title="Chế độ đêm Night Mode - iPhone 13 Pro 128GB" alt="Chế độ đêm Night Mode - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-9.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Hệ thống camera zoom quang học 6x, riêng camera&nbsp;telephoto có thể zoom quang 3x rất tuyệt khi chụp ảnh và quay video ở xa. Kết hợp nhiều tùy chọn hiệu ứng bokeh và các hiệu ứng ánh sáng chất lượng để bạn tạo nên những bức ảnh lung linh như nhiếp ảnh gia chuyên nghiệp.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-10.jpg"><img class="lazyload" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; opacity: 0; display: block; height: auto !important;" title="Ảnh chụp trên camera - iPhone 13 Pro 128GB" alt="Ảnh chụp trên camera - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-10.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Một chế độ nổi bật khác hỗ trợ trên camera Pro này là chế độ&nbsp;điện ảnh Cinematic cho phép quay&nbsp;với độ sâu trường ảnh nông, tự động thêm các chuyển đổi lấy nét giữa các đối tượng, đoán trước chủ thể mới vào khung hình và đưa họ vào tiêu điểm, đổi tiêu điểm, chỉnh hiệu ứng&nbsp;bokeh dễ dàng kể cả sau khi quay.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-11.jpg"><img class="lazyload" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; opacity: 0; display: block; height: auto !important;" title="Chế độ điện ảnh độc đáo - iPhone 13 Pro 128GB" alt="Chế độ điện ảnh độc đáo - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-11.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Có chế độ chụp phong cảnh Photographic Styles dễ dàng điều chỉnh độ ấm, tông màu phù hợp với ý tưởng chụp của bạn, tuy vậy khác với các bộ lọc thông thường, với chế độ này các chi tiết như bầu trời, màu da sẽ được giữ lại độ chân thật, tự nhiên nhất có thể.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-12.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Chế độ chụp phong cảnh Photographic Styles - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-12.jpg" alt="Chế độ chụp phong cảnh Photographic Styles - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-12.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Ở mặt trước điện thoại có camera TrueDepth độ phân giải&nbsp;12 MP cho bạn tự selfie tuyệt đẹp, đi kèm nhiều chế độ chụp tiện ích như chế độ chân dung tích hợp hiệu ứng bokeh nâng cao và kiểm soát độ sâu&nbsp;mạnh mẽ, thêm Animoji và Memoji, chế độ Night Mode,&nbsp;Burst,&nbsp;Cinematic,...</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-13.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Camera TrueDepth - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-13.jpg" alt="Camera TrueDepth - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-13.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Hơn nữa, camera TrueDepth và chip&nbsp;A15 Bionic hỗ trợ Face ID để xác minh khuôn mặt, giúp mở máy nhanh và an toàn hơn.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Cả camera trước và sau đều quay được video&nbsp;HDR hỗ trợ Dolby Vision đạt chuẩn chất lượng lên đến 4K với tốc độ khung hình 60&nbsp;fps, quay video&nbsp;ProRes lên đến 1080p ở tốc độ 30&nbsp;fps,&nbsp;cùng nhiều chế độ quay khác giúp bạn có nhiều sự thay đổi khác nhau khi quay.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-14.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Hỗ trợ quay video đạt chất lượng 4K - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-14.jpg" alt="Hỗ trợ quay video đạt chất lượng 4K - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-14.jpg"></a></p>
+                                </div>
+                                <h3 style="box-sizing: border-box; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 500; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; margin: 20px 0px 15px; background-color: #ffffff; padding: 0px; outline: none;">Hiệu năng đột phá với Apple A15 Bionic</h3>
+                                <div class="parameter-item" style="box-sizing: border-box; font-size: 14px; text-align: start; margin: 0px; padding: 0px 30px;">
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">iPhone 13 Pro được trang bị bộ vi xử lý Apple A15 Bionic, sản xuất trên tiến trình 5 nm cải tiến, theo Apple công bố thì đây&nbsp;là chipset nhanh nhất trong thế giới smartphone tại thời điểm 09/2021.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-15.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Vi xử lý Apple A15 Bionic - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-15.jpg" alt="Vi xử lý Apple A15 Bionic - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-15.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Tích hợp chip đồ họa GPU 5 lõi hiệu suất tăng lên 50%,&nbsp;CPU đáp ứng đa dạng tác vụ, nâng cao tuổi thọ pin. Đặc biệt, công nghệ trí tuệ nhân tạo Neural Engine tăng tốc các tác vụ máy học, thực hiện được đến 15.8 nghìn tỷ hoạt động mỗi giây, cho quá trình sử dụng thiết bị mượt mà, ổn định.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-16.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Đồ họa mượt mà - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-16.jpg" alt="Đồ họa mượt mà - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-16.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Máy sở hữu con&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s;" title="Tham khảo điện thoại có RAM 6 GB tại Thegioididong.com" href="https://www.thegioididong.com/dtdd-ram-6gb" target="_blank" rel="noopener">RAM 6 GB</a>,&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s;" title="Tham khảo điện thoại có ROM 128 GB tại Thegioididong.com" href="https://www.thegioididong.com/dtdd-apple-iphone-rom-128gb" target="_blank" rel="noopener">bộ nhớ trong 128 GB</a>, vừa đủ với nhu cầu sử dụng của một người dùng cơ bản không có nhu cầu quay video quá nhiều, máy cũng có thêm phiên bản bộ nhớ trong lên đến&nbsp;<a style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s;" title="Tham khảo iPhone 13 Pro 1 TB tại Thegioididong.com" href="https://www.thegioididong.com/dtdd/iphone-13-pro-1tb" target="_blank" rel="noopener">iPhone 13 Pro 1 TB</a>, bạn có thể cân nhắc nếu có nhu cầu lưu trữ cao.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-17.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Dung lượng bộ nhớ - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-17.jpg" alt="Dung lượng bộ nhớ - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-17.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Ngoài ra, máy còn được hỗ trợ mạng di động 5G&nbsp;chất lượng cao, có khả năng phản hồi tức thì, việc tải xem, xem phim 4K,... sẽ vô cùng nhanh chóng, đưa trải nghiệm internet của người dùng lên tầm cao mới.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-2021-pro-01.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Hỗ trợ kết nối 5G - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-2021-pro-01.jpg" alt="Hỗ trợ kết nối 5G - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-2021-pro-01.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Thiết bị được cài đặt nền tảng iOS 15 cho bạn vừa giao tiếp qua FaceTime vừa chia sẻ bài hát, tài liệu với mọi người tiện lợi, dễ dàng tương tác với văn bản trong hình ảnh để gửi email, nhận chỉ đường, thực hiện cuộc gọi,...&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-18.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Nền tảng IOS 15 - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-18.jpg" alt="Nền tảng IOS 15 - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-18.jpg"></a></p>
+                                </div>
+                                <h3 style="box-sizing: border-box; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 500; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; margin: 20px 0px 15px; background-color: #ffffff; padding: 0px; outline: none;">Nâng cấp thời lượng pin</h3>
+                                <div class="parameter-item" style="box-sizing: border-box; font-size: 14px; text-align: start; margin: 0px; padding: 0px 30px;">
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">iPhone 13 Pro sẽ có thời lượng pin sử dụng tốt hơn 1.5 tiếng khi so với iPhone 12 Pro, máy có thể phát video liên tục trong 22 tiếng, nghe nhạc trong 75 tiếng và hỗ trợ sạc nhanh 20 W qua cáp.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-19.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Tối ưu hóa năng lượng - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-19.jpg" alt="Tối ưu hóa năng lượng - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-19.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Lưu ý: Củ sạc 20 W sẽ không đi kèm trong hộp khi mua máy.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Ngoài ra còn hỗ trợ sạc không dây chuẩn Qi 7.5 W, sạc không dây&nbsp;MagSafe 15 W bạn có thể lựa chọn phương pháp sạc phù hợp và tiện lợi nhất trong quá trình sử dụng.</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; background-color: transparent; color: #2f80ed; text-decoration-line: none; margin: 0px; padding: 0px; transition: all 0.2s ease 0s; cursor: default;" href="https://www.thegioididong.com/images/42/230521/iphone-13-pro-20.jpg"><img class=" lazyloaded" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; object-fit: cover; margin: 20px auto; padding: 0px; display: block; height: auto !important;" title="Sạc không dây với MagSafe - iPhone 13 Pro 128GB" src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-20.jpg" alt="Sạc không dây với MagSafe - iPhone 13 Pro 128GB" data-src="https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-20.jpg"></a></p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;">Dung lượng pin trên iPhone luôn thấp hơn khi so với các dòng máy Android nhưng việc trang bị chipset mới cùng sự tối ưu hoá của hệ điều hành sẽ đảm bảo thời lượng sử dụng không hề thua kém trên sản phẩm Android, thậm chí còn có thể vượt trội hơn.&nbsp;</p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; font-size: 16px !important;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; text-align: justify;">iPhone 13 Pro với thiết kế cứng cáp, sang trọng cùng khả năng nhiếp ảnh ấn tượng, sẽ là một sản phẩm phục vụ tốt các nhu cầu của bạn cũng như là một món đồ thời trang hiện đại.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 md-12 c-12">
+                        <div class="p-3 border-b-[1px] border-solid border-b-[#eee]">
+                            <h3 class="font-semibold text-[20px] text-[#444]">Bài viết mới</h3>
+                        </div>
+                        <!-- Khi lấy dữ liệu bài viết từ database, chỉ lấy tối đa 4 bài viết -->
+                        <div title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!" class="hover:cursor-pointer group last:border-0 flex p-2 items-center border-b-[1px] border-solid border-b-yellow-500">
+                            <img class="p-1 mr-1 w-[100px] h-[60px] object-contain" src="https://via.placeholder.com/100x60" alt="">
+                            <div>
+                                <h3 class="line-clamp-2 leading-[24px]  group-hover:text-yellow-600">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!
+                                </h3>
+                                <div class="flex justify-between">
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-user-edit mr-1 p-1 "></i><span>Admin</span>
+                                    </div>
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-clock mr-1 p-1 "></i><span>5/12/2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!" class="hover:cursor-pointer group last:border-0 flex p-2 items-center border-b-[1px] border-solid border-b-yellow-500">
+                            <img class="p-1 mr-1 w-[100px] h-[60px] object-contain" src="https://via.placeholder.com/100x60" alt="">
+                            <div>
+                                <h3 class="line-clamp-2 leading-[24px] group-hover:text-yellow-600">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!
+                                </h3>
+                                <div class="flex justify-between">
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-user-edit mr-1 p-1"></i><span>Admin</span>
+                                    </div>
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-clock mr-1 p-1"></i><span>5/12/2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!" class="hover:cursor-pointer group last:border-0 flex p-2 items-center border-b-[1px] border-solid border-b-yellow-500">
+                            <img class="p-1 mr-1 w-[100px] h-[60px] object-contain" src="https://via.placeholder.com/100x60" alt="">
+                            <div>
+                                <h3 class="line-clamp-2 leading-[24px] group-hover:text-yellow-600">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!
+                                </h3>
+                                <div class="flex justify-between">
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-user-edit mr-1 p-1 "></i><span>Admin</span>
+                                    </div>
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-clock mr-1 p-1 "></i><span>5/12/2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!" class="hover:cursor-pointer group last:border-0 flex p-2 items-center border-b-[1px] border-solid border-b-yellow-500">
+                            <img class="p-1 mr-1 w-[100px] h-[60px] object-contain" src="https://via.placeholder.com/100x60" alt="">
+                            <div>
+                                <h3 class="line-clamp-2 leading-[24px] group-hover:text-yellow-600">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur!
+                                </h3>
+                                <div class="flex justify-between">
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-user-edit mr-1 p-1 "></i><span>Admin</span>
+                                    </div>
+                                    <div class="text-[12px] p-1 font-thin">
+                                        <i class="fas fa-clock mr-1 p-1 "></i><span>5/12/2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <footer class="pt-4 border-solid border-primary-color border-t-4"></footer>
+        <div class="grids wide pb-4">
+            <div class="row tablet:p-[0_16px] mobile:p-[0_16px]">
+                <div class="col l-3 md-6 c-6 mb-5">
+                    <p class="font-semibold text-[16px] pb-2 uppercase">Chăm sóc khách hàng</p>
+                    <ul class="text-[12px] text-[#737373]">
+                        <li class="hover:text-primary-color hover:cursor-pointer">Trung Tâm Trợ Giúp</li>
+                        <li class="hover:text-primary-color hover:cursor-pointer">Sản phẩm</li>
+                        <li class="hover:text-primary-color hover:cursor-pointer">Hướng Dẫn Mua Hàng</li>
+                    </ul>
+                </div>
+                <div class="col l-3 md-6 c-6 mb-5">
+                    <p class="font-semibold text-[16px] pb-2 uppercase">Giới thiệu</p>
+                    <ul class="text-[12px] text-[#737373]">
+                        <li class="hover:text-primary-color hover:cursor-pointer">Trung Tâm Trợ Giúp</li>
+                        <li class="hover:text-primary-color hover:cursor-pointer">Cửa Hàng</li>
+                        <li class="hover:text-primary-color hover:cursor-pointer">Hướng Dẫn Mua Hàng</li>
+                    </ul>
+                </div>
+                <div class="col l-3 md-6 c-6 mb-5">
+                    <p class="font-semibold text-[16px] pb-2 uppercase">Danh mục</p>
+                    <ul class="text-[12px] text-[#737373]">
+                        <li class="hover:text-primary-color hover:cursor-pointer">Apple</li>
+                        <li class="hover:text-primary-color hover:cursor-pointer">Samsung</li>
+                        <li class="hover:text-primary-color hover:cursor-pointer">Xiaomi</li>
+                    </ul>
+                </div>
+                <div class="col l-3 md-6 c-6 mb-5 c-0">
+                    <p class="font-semibold text-[16px] pb-2 uppercase">Theo dõi chúng tôi</p>
+                    <div class="">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKIDS-107222962129810&tabs&width=280&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="h-10 bg-[#f5f5f5]">
+            <p class="leading-[40px] text-center text-[#737373] text-[12px]">2022 - Bản quyền thuộc về Quốc Trọng</p>
+        </div>
+
+        </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <!-- <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script> -->
+    <script src="./js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            autoplay: true,
+            interval: 3000,
+        }).mount();
+    </script>
+</body>
+
+</html>

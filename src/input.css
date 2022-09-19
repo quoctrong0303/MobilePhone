@@ -28,3 +28,4 @@
 
   /* Notes */
   /* Ring: Vòng, giống outline, border */
+  /* Leading-[30px] mỗi dòng chiếm 30px, thì 2 dòng là 60px, content sẽ có 2 dòng(line-clamp-2), vượt qua 2 dòng sẽ thành ... */

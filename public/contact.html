@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en" >
+<html class="scroll-smooth" lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -61,7 +61,7 @@
                                 class="hover:cursor-pointer ml-2 rounded-full w-5 h-5">
                             <!-- User settings -->
                             <div
-                                class="z-10 w-[150px] bg-white right-[-10px] shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] absolute top-[calc(100%_+_10px)] hidden group-hover:block">
+                                class="z-10 w-[150px] bg-white right-[-10px] shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] absolute top-[calc(100%_+_10px)] animate-[fadeIn_.2s_ease-in] hidden group-hover:block">
                                 <ul class="p-3">
                                     <a href="">
                                         <li class="hover:text-primary-color pb-1">Tài khoản</li>
@@ -69,7 +69,7 @@
                                     <a href="">
                                         <li class="hover:text-primary-color pb-1">Đổi mật khẩu</li>
                                     </a>
-                                    <a href="">
+                                    <a class="" href="">
                                         <li
                                             class="hover:text-primary-color  pt-2 border-t-2 border-t-primary-color border-solid">
                                             Đăng xuất</li>
@@ -110,8 +110,8 @@
                 -->
                     <div class="relative inline-block">
                         <input name="p" type="search" placeholder="Nhập sản phẩm bạn cần tìm..."
-                        class="focus-visible:shadow-[0_0_5px_#ccc] focus-visible:outline-none p-4 border h-11 w-96 text-[16px]"
-                        type="text">
+                            class="focus-visible:shadow-[0_0_5px_#ccc] focus-visible:outline-none p-4 border h-11 w-96 text-[16px]"
+                            type="text">
                     </div>
                     <!--remove space
                 --><button class="rounded-r-lg w-11 h-11 bg-primary-color hover:opacity-80"><i
@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="relative group">
-
+                    <!-- Class group giúp định nghĩa nguyên thẻ div là một nhóm, khi các thẻ con xài group-hover có nghĩa là khi hover vào thẻ chứa group thì thẻ chưa group-hover sẽ được CSS -->
 
                     <div class="relative">
                         <a href="">
@@ -149,35 +149,51 @@
                         </a>
                         <!-- News settings -->
                         <div
-                            class="z-10 w-[450px]  bg-white right-0 shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] absolute top-[calc(100%_+_10px)] hidden group-hover:block">
+                            class="z-10 w-[450px]  bg-white right-0 shadow-[0_1px_20px_0_rgb(0_0_0_/_20%)] animate-[fadeIn_.2s_ease-in]  absolute top-[calc(100%_+_10px)] hidden group-hover:block">
                             <ul class="p-3 max-h-[450px] overflow-y-auto">
                                 <div class="flex justify-between ">
-                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
                                         <span>[NÓNG]</span>
-                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
                                     </li>
-                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
                                 </div>
                                 <div class="flex justify-between ">
-                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
                                         <span>[NÓNG]</span>
-                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
                                     </li>
-                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
                                 </div>
                                 <div class="flex justify-between ">
-                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
                                         <span>[NÓNG]</span>
-                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
                                     </li>
-                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
                                 </div>
                                 <div class="flex justify-between ">
-                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%" class="line-clamp-1 leading-[28px] border-b-2 border-solid border-yellow-500 p-2">
+                                    <li title="Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%"
+                                        class="hover:text-yellow-500 hover:cursor-pointer whitespace-nowrap text-ellipsis overflow-x-hidden border-b-2 border-solid border-yellow-500 p-2">
                                         <span>[NÓNG]</span>
-                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%</span>
+                                        <span>Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến 50%Sản phẩm giảm giá đến
+                                            50%</span>
                                     </li>
-                                    <a title="" class="hover:text-primary-color text-[16px] font-semibold leading-[28px]" href="">x</a>
+                                    <a title=""
+                                        class="hover:text-primary-color text-[16px] font-semibold leading-[28px]"
+                                        href="">x</a>
                                 </div>
                             </ul>
                             <!-- Arrow up -->
@@ -218,7 +234,7 @@
                         <div class="border-solid border-2 border-primary-color 
                             absolute top-[1px] right-1 rounded-[99%] w-5 h-5 leading-[16px] 
                             text-center text-white text-[12px] bg-black">
-                            <p>3</p>
+                            <p id="cart-count">7</p>
                         </div>
 
                         <!-- Cart hover -->
@@ -238,14 +254,14 @@
                             </div>
                             <!-- Has carts -->
                             <ul class="max-h-[370px] overflow-y-scroll">
-                                <li class="hover:bg-slate-100 flex align-center">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
                                     <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
                                         src="https://via.placeholder.com/40" alt="">
                                     <div class="w-[100%] mr-3">
                                         <div class="flex justify-between">
                                             <h5>Đồng hồ trẻ em</h5>
                                             <div>
-                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
                                                 <span class="text-[10px] text-[#757575]">x</span>
                                                 <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
@@ -253,19 +269,19 @@
 
                                         <div class="flex justify-between">
                                             <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="hover:bg-slate-100 flex align-center">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
                                     <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
                                         src="https://via.placeholder.com/40" alt="">
                                     <div class="w-[100%] mr-3">
                                         <div class="flex justify-between">
                                             <h5>Đồng hồ trẻ em</h5>
                                             <div>
-                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
                                                 <span class="text-[10px] text-[#757575]">x</span>
                                                 <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
@@ -273,19 +289,19 @@
 
                                         <div class="flex justify-between">
                                             <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="hover:bg-slate-100 flex align-center">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
                                     <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
                                         src="https://via.placeholder.com/40" alt="">
                                     <div class="w-[100%] mr-3">
                                         <div class="flex justify-between">
                                             <h5>Đồng hồ trẻ em</h5>
                                             <div>
-                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
                                                 <span class="text-[10px] text-[#757575]">x</span>
                                                 <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
@@ -293,19 +309,19 @@
 
                                         <div class="flex justify-between">
                                             <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="hover:bg-slate-100 flex align-center">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
                                     <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
                                         src="https://via.placeholder.com/40" alt="">
                                     <div class="w-[100%] mr-3">
                                         <div class="flex justify-between">
                                             <h5>Đồng hồ trẻ em</h5>
                                             <div>
-                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
                                                 <span class="text-[10px] text-[#757575]">x</span>
                                                 <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
@@ -313,19 +329,19 @@
 
                                         <div class="flex justify-between">
                                             <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="hover:bg-slate-100 flex align-center">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
                                     <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
                                         src="https://via.placeholder.com/40" alt="">
                                     <div class="w-[100%] mr-3">
                                         <div class="flex justify-between">
                                             <h5>Đồng hồ trẻ em</h5>
                                             <div>
-                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
                                                 <span class="text-[10px] text-[#757575]">x</span>
                                                 <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
@@ -333,19 +349,19 @@
 
                                         <div class="flex justify-between">
                                             <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="hover:bg-slate-100 flex align-center">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
                                     <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
                                         src="https://via.placeholder.com/40" alt="">
                                     <div class="w-[100%] mr-3">
                                         <div class="flex justify-between">
                                             <h5>Đồng hồ trẻ em</h5>
                                             <div>
-                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
                                                 <span class="text-[10px] text-[#757575]">x</span>
                                                 <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
@@ -353,19 +369,19 @@
 
                                         <div class="flex justify-between">
                                             <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="hover:bg-slate-100 flex align-center">
+                                <li class="item-cart hover:bg-slate-100 flex align-center">
                                     <img class="m-3 w-[40px] h-[40px] border-solid border-[1px] border-[#e8e8e8]"
                                         src="https://via.placeholder.com/40" alt="">
                                     <div class="w-[100%] mr-3">
                                         <div class="flex justify-between">
                                             <h5>Đồng hồ trẻ em</h5>
                                             <div>
-                                                <span class="text-yellow-500">2.000.000đ</span>
+                                                <span class="text-yellow-500">2.000.000<span class="align-top text-[12px]"> VNĐ</span></span>
                                                 <span class="text-[10px] text-[#757575]">x</span>
                                                 <span class="text-[12px] text-[#757575]">2</span>
                                             </div>
@@ -373,7 +389,7 @@
 
                                         <div class="flex justify-between">
                                             <span class="text-[14px] text-[#757575] font-[300]">Phân loại: VIP</span>
-                                            <span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span>
+                                            <a onclick="app.removeItemCart(event)"><span class="hover:text-yellow-500 text-[14px] text-[#757575]">Xoá</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -389,44 +405,79 @@
             </div>
         </div>
 
-
-        <!-- Login form -->
-        <div class="py-[100px] mobile:px-[20px] min-h-screen bg-gradient-to-tr from-white to-yellow-100">
-            <div class="grids wide bg-white rounded-lg h-[50%] shadow-md">
-                <div class="row">
-                    <div class="col l-4 md-12 c-12">
-                        <img class="h-full w-full mobile:hidden" src="https://play-lh.googleusercontent.com/VAY0Hdd9w2VKOgXvv11KB9XzZmbuKmzI7jqD1RSJtQepd3vXM9wpUUO0YUHBJ9u_yxA" alt="">
-                    </div>
-                    <div class="col l-8 md-12 c-12">
-                        <form method="get" action="./login.html" id="fLogin" class="mobile:p-5 pc:p-32 tablet:p-5" action="">
-                            <h2 class="font-semibold text-[24px] text-center">Đăng nhập</h2><span>Chưa có tài khoản?<a href="./register.html"> Đăng ký</a></span>
-                            <div class=" form-group row m-[24px_0px]">
-                                <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="username">Tên đăng nhập</label>
-                                <input name="username" placeholder="Vui lòng nhập tên đăng nhập..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="text" id="username">
-                                <span class="error-message col l-o-4 text-red-600"></span>
-                            </div>
-                            <div class=" form-group row m-[24px_0px]">
-                                <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="password">Mật khẩu</label>
-                                <input name="password" placeholder="Vui lòng nhập mật khẩu..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="password" id="password">
-                                <span class="error-message col l-o-4 text-red-600"></span>
-                            </div>
-
-                            <button type="submit" class="button mb-4 tablet:w-full mobile:w-full float-right btn-primary">
-                                Đăng nhập
-                            </button>
-                            <!-- Btn khi đang submit -->
-                            <button type="button" style="display: none;" class="loading mb-4 tablet:w-full mobile:w-full w-50 h-50 float-right items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-yellow-400 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
-                                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                </svg>
-                                Đang đăng nhập...
-                              </button>
-                        </form>
+<!-- Contact -->
+<div class="py-[100px] mobile:px-[20px] min-h-screen bg-gradient-to-tr from-white to-yellow-100">
+    <div class="grids wide bg-white rounded-lg h-[50%] shadow-md">
+        <div class="row">
+            <div class="col l-4 md-12 c-12">
+                <div class="bg-primary-color w-full h-full">
+                    <div class="px-8 py-20">
+                        <div class="text-center">
+                            <h3 class="font-semibold text-[24px]">liên hệ chúng tôi</h3>
+                        </div>
+                        <div class="flex p-2">   
+                            <i class="fas fa-map-marker-alt p-2 mr-2"></i>              
+                            <p class="font-semibold">
+                                Địa chỉ: <span class="font-normal">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat maiores dolorum reprehenderit quisquam voluptatum dolore.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex items-center p-2">                 
+                            <p class="font-semibold"><i class="fas fa-phone-alt p-2 mr-2"></i>
+                                Số điện thoại: <span class="font-normal">031 2345 6789</span></p>
+                        </div>
+                        <div class="flex items-center p-2">                 
+                            <p class="font-semibold"><i class="fas fa-envelope p-2 mr-2"></i>
+                                Email: <span class="font-normal">quoctrong0303@gmail.com</span></p>
+                        </div>
+                        <div class="flex items-center p-2">                 
+                            <p class="font-semibold"><i class="fas fa-globe p-2 mr-2"></i>
+                                Website: <span class="font-normal">quoctrong0303.com</span></p>
+                        </div>
+                        <div class="p-2">
+                            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8415184090704!2d105.76842125027359!3d10.029933692795458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0895a51d60719%3A0x9d76b0035f6d53d0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBD4bqnbiBUaMah!5e0!3m2!1svi!2s!4v1663576022587!5m2!1svi!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col l-8 md-12 c-12">
+                <form method="get" action="./login.html" id="fContact" class="mobile:p-5 pc:p-20 tablet:p-5" action="">
+                    <h2 class="font-semibold text-[24px]">Phản hồi</h2>
+                    <div class=" form-group row m-[24px_0px]">
+                        <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="fullname">Họ và tên</label>
+                        <input name="fullname" placeholder="Vui lòng nhập họ và tên..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="text" id="fullname">
+                        <span class="error-message col l-o-4 text-red-600"></span>
+                    </div>
+                    <div class=" form-group row m-[24px_0px]">
+                        <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="email">Email</label>
+                        <input name="email" placeholder="Vui lòng nhập email..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="email" id="email">
+                        <span class="error-message col l-o-4 text-red-600"></span>
+                    </div>
+                    <div class=" form-group row m-[24px_0px]">
+                        <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="numberphone">Số điện thoại</label>
+                        <input name="numberphone" placeholder="Vui lòng nhập số điện thoại..." class="focus-visible:outline-primary-color bg-yellow-100 w-[280px] h-[32px] p-5 col l-8 md-12 c-12" type="tel" id="numberphone">
+                        <span class="error-message col l-o-4 text-red-600"></span>
+                    </div><div class=" form-group row m-[24px_0px]">
+                        <label class="col l-4 md-12 c-12 tablet:pb-2 mobile:pb-2" for="content">Nội dung</label>
+                        <textarea name="content" class="focus-visible:outline-primary-color h-[150px] bg-yellow-100 w-[280px] p-5 col l-8 md-12 c-12" id="content"></textarea>
+                        <span class="error-message col l-o-4 text-red-600"></span>
+                    </div>
+                    <button type="submit" id="btnSendContact" class="button mb-4 tablet:w-full mobile:w-full float-right btn-primary">
+                        Gửi phản hồi
+                    </button>
+                    <!-- Btn khi đang submit -->
+                    <button type="button" style="display: none;" class=" loading mb-4 tablet:w-full mobile:w-full w-50 h-50 float-right items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-yellow-400 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
+                        <svg class="animate-spin  h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>                     
+                      </button>
+                </form>
+            </div>
         </div>
+    </div>
+</div>
 
 
         <footer class="pt-4 border-solid border-primary-color border-t-4"></footer>
@@ -477,22 +528,9 @@
     </div>
 
     <script src="./js/script.js"></script>
-    <script src="./js/validator.js"></script>
+    <!-- <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script> -->
     <script src="./js/splide.min.js"></script>
-    <script>
-        options = {
-            rules: {
-                'username' : ['required', 'max:20'],
-                'password' : ['required']
-            },
-            messages: {
-                'required' : 'Vui lòng nhập trường này!',
-                'max:20' : 'Vui lòng nhập tối đa 20 ký tự!'
-            },
-            isCallAPI: true,
-        }
-        validator('#fLogin', options);
-    </script>
+    <script src="./js/validator.js"></script>
     <script>
         new Splide('.splide', {
             type: 'loop',
@@ -500,6 +538,25 @@
             autoplay: true,
             interval: 3000,
         }).mount();
+    </script>
+    <script>
+        options = {
+            rules: {
+                'email' : ['required', 'email'],
+                'fullname': ['required'],
+                'numberphone': ['required', 'min:10', 'max:15'],
+                'content': ['required']
+
+            },
+            messages: {
+                'required': 'Vui lòng nhập trường này!',
+                'email' : 'Email không hợp lệ!',
+                'max:20' : 'Số điện thoại tối đa 15 ký tự!',
+                'min:10' : 'Số điện thoại tối thiểu 10 ký tự!',
+            },
+            isCallAPI: true,
+        }
+        validator('#fContact', options);
     </script>
 </body>
 

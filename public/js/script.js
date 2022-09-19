@@ -402,6 +402,44 @@ const app = {
       };
     }
   },
+  // Xử lý lấy dữ liệu từ form contact, ở thư viện validator
+  // đã xây dựng chức năng lấy data
+  // Nhưng vì là thư viện chung nên sẽ validate dùng cho nhiều mục đích
+  // Nên không thể viết phần call API vào thư viện validator
+  // Phải xử lý riêng như hàm bên dưới
+  // Những hàm lấy data viết trong file này đa số là
+  // lấy biến cứng, không có tham số truyền vào
+  // Khi có thay đổi class thì hãy vào đây thay đổi luôn
+  handleSendContact: () => {
+    let btnSend = $("#btnSendContact");
+    let formElement = $("#fContact");
+    if (btnSend && formElement) {
+      let data = {};
+      btnSend.onclick = () => {
+        formElement.querySelector("input[name='fullname']")
+          ? (data.fullname = formElement.querySelector(
+              "input[name='fullname']"
+            ).value)
+          : null;
+        formElement.querySelector("input[name='email']")
+          ? (data.email = formElement.querySelector(
+              "input[name='email']"
+            ).value)
+          : null;
+        formElement.querySelector("input[name='numberphone']")
+          ? (data.numberphone = formElement.querySelector(
+              "input[name='numberphone']"
+            ).value)
+          : null;
+        formElement.querySelector("textarea[name='content']")
+          ? (data.content = formElement.querySelector(
+              "textarea[name='content']"
+            ).value)
+          : null;
+        console.log(data);
+      };
+    }
+  },
   start: () => {
     app.fetchProvinces(
       "#checkoutProvince",
@@ -414,6 +452,7 @@ const app = {
       "#fileAvatar",
       ".avatar-profile"
     );
+    app.handleSendContact();
     app.handleSaveProfile();
     app.toggleDisabledForm("#btnUpdateInfo", "#fProfile");
     app.handleCheckout("#fCheckout", ".btnCheckout");
